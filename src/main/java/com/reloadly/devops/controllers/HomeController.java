@@ -14,7 +14,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @RestController
-@RequestMapping("auth-serve/messenger/v1")
+@RequestMapping("api/auth-serve/v1")
 @CrossOrigin(origins = "*", maxAge = 3600)
 public class HomeController {
 	@Autowired
