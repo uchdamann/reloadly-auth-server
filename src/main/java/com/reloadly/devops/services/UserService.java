@@ -25,7 +25,6 @@ public class UserService implements UserDetailsService {
 			throw new AuthException("Username does not exist");
 		}
 		
-//		This is to ensure that you cannot use postman etc and get token if your account is not activated
 		if(!user.get().getIsActive()) {
 			throw new AuthException("User has not been activated");
 		}

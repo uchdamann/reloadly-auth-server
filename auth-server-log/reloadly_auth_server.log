@@ -1,39 +1,177 @@
-Mon 24-Jan-2022 11:20:44 INFO  - [           main] SpringBootTestContextBootstrapper   : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.reloadly.devops.AuthServerApplicationTests], using SpringBootContextLoader
-Mon 24-Jan-2022 11:20:44 INFO  - [           main] AbstractContextLoader               : Could not detect default resource locations for test class [com.reloadly.devops.AuthServerApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-Mon 24-Jan-2022 11:20:44 INFO  - [           main] AnnotationConfigContextLoaderUtils  : Could not detect default configuration classes for test class [com.reloadly.devops.AuthServerApplicationTests]: AuthServerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-Mon 24-Jan-2022 11:20:46 INFO  - [           main] SpringBootTestContextBootstrapper   : Found @SpringBootConfiguration com.reloadly.devops.AuthServerApplication for test class com.reloadly.devops.AuthServerApplicationTests
-Mon 24-Jan-2022 11:20:48 INFO  - [           main] SpringBootTestContextBootstrapper   : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-Mon 24-Jan-2022 11:20:49 INFO  - [           main] SpringBootTestContextBootstrapper   : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1cdc4c27, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@77b14724, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5d9b7a8a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1e8ce150, org.springframework.test.context.support.DirtiesContextTestExecutionListener@604f2bd2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1d3ac898, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1b73be9f, org.springframework.test.context.event.EventPublishingTestExecutionListener@628c4ac0, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7b84fcf8, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@30b19518, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@363042d7, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@366ac49b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6ad59d92, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@56f0cc85]
-Mon 24-Jan-2022 11:20:51 INFO  - [init] Version                             : HV000001: Hibernate Validator 6.1.6.Final
-Mon 24-Jan-2022 11:20:51 INFO  - [           main] AuthServerApplicationTests          : Starting AuthServerApplicationTests using Java 1.8.0_221 on DESKTOP-2N2OQGT with PID 9064 (started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\auth-server)
-Mon 24-Jan-2022 11:20:51 INFO  - [           main] AuthServerApplicationTests          : The following profiles are active: dev
-Mon 24-Jan-2022 11:21:06 INFO  - [           main] RepositoryConfigurationDelegate     : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-Mon 24-Jan-2022 11:21:06 INFO  - [           main] RepositoryConfigurationDelegate     : Finished Spring Data repository scanning in 507 ms. Found 1 JPA repository interfaces.
-Mon 24-Jan-2022 11:21:15 INFO  - [           main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@31973858' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-Mon 24-Jan-2022 11:21:16 INFO  - [           main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-Mon 24-Jan-2022 11:21:20 INFO  - [           main] LogHelper                           : HHH000204: Processing PersistenceUnitInfo [name: default]
-Mon 24-Jan-2022 11:21:20 INFO  - [           main] Version                             : HHH000412: Hibernate ORM core version 5.4.25.Final
-Mon 24-Jan-2022 11:21:22 INFO  - [           main] Version                             : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-Mon 24-Jan-2022 11:21:24 INFO  - [           main] HikariDataSource                    : HikariPool-1 - Starting...
-Mon 24-Jan-2022 11:21:24 WARN  - [           main] DriverDataSource                    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-Mon 24-Jan-2022 11:21:31 INFO  - [           main] HikariDataSource                    : HikariPool-1 - Start completed.
-Mon 24-Jan-2022 11:21:32 INFO  - [           main] Dialect                             : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-Mon 24-Jan-2022 11:22:03 INFO  - [           main] JtaPlatformInitiator                : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-Mon 24-Jan-2022 11:22:03 INFO  - [           main] LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-Mon 24-Jan-2022 11:22:04 WARN  - [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-Mon 24-Jan-2022 11:22:14 INFO  - [           main] JwtAccessTokenConverter             : Configured with RSA signing key
-Mon 24-Jan-2022 11:22:14 INFO  - [           main] JwtAccessTokenConverter             : Signing and verification RSA keys match
-Mon 24-Jan-2022 11:22:18 INFO  - [           main] EndpointLinksResolver               : Exposing 2 endpoint(s) beneath base path '/actuator'
-Mon 24-Jan-2022 11:22:26 INFO  - [           main] DefaultSecurityFilterChain          : Will secure Or [Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3c9c91e3, org.springframework.security.web.context.SecurityContextPersistenceFilter@6b3bc1f6, org.springframework.security.web.header.HeaderWriterFilter@3694461d, org.springframework.security.web.authentication.logout.LogoutFilter@3aa63b53, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3a66d97e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3050d479, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@61d61b0e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@746da54f, org.springframework.security.web.session.SessionManagementFilter@30d5fc1b, org.springframework.security.web.access.ExceptionTranslationFilter@2e38d44e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2d117280]
-Mon 24-Jan-2022 11:22:26 INFO  - [           main] DefaultSecurityFilterChain          : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@74faf450, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c06f19c, org.springframework.security.web.header.HeaderWriterFilter@46d18a33, org.springframework.security.web.csrf.CsrfFilter@244f356, org.springframework.security.web.authentication.logout.LogoutFilter@61aa6300, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3065efd0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7aaf6bfd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@54c37dab, org.springframework.security.web.session.SessionManagementFilter@495f3965, org.springframework.security.web.access.ExceptionTranslationFilter@75db328e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@b889cb6]
-Mon 24-Jan-2022 11:22:26 INFO  - [           main] PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-Mon 24-Jan-2022 11:22:32 INFO  - [           main] ThreadPoolTaskExecutor              : Initializing ExecutorService 'applicationTaskExecutor'
-Mon 24-Jan-2022 11:22:35 WARN  - [           main] ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-Mon 24-Jan-2022 11:22:38 INFO  - [           main] DocumentationPluginsBootstrapper    : Context refreshed
-Mon 24-Jan-2022 11:22:38 INFO  - [           main] DocumentationPluginsBootstrapper    : Found 1 custom documentation plugin(s)
-Mon 24-Jan-2022 11:22:38 INFO  - [           main] ApiListingReferenceScanner          : Scanning for api listing references
-Mon 24-Jan-2022 11:22:39 INFO  - [           main] AuthServerApplicationTests          : Started AuthServerApplicationTests in 109.66 seconds (JVM running for 126.019)
-Mon 24-Jan-2022 11:22:41 INFO  - [Hook] ThreadPoolTaskExecutor              : Shutting down ExecutorService 'applicationTaskExecutor'
-Mon 24-Jan-2022 11:22:41 INFO  - [Hook] LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-Mon 24-Jan-2022 11:22:41 INFO  - [Hook] HikariDataSource                    : HikariPool-1 - Shutdown initiated...
-Mon 24-Jan-2022 11:22:41 INFO  - [Hook] HikariDataSource                    : HikariPool-1 - Shutdown completed.
+Tue 25-Jan-2022 14:47:21 INFO  - [init] Version                             : HV000001: Hibernate Validator 6.1.6.Final
+Tue 25-Jan-2022 14:47:21 INFO  - [Main] AuthServerApplication               : Starting AuthServerApplication using Java 1.8.0_131 on DESKTOP-2N2OQGT with PID 2352 (C:\Users\Uche Kamani\Documents\STS4Projects\auth-server\target\classes started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\auth-server)
+Tue 25-Jan-2022 14:47:21 INFO  - [Main] AuthServerApplication               : The following profiles are active: dev
+Tue 25-Jan-2022 14:47:21 INFO  - [Main] DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+Tue 25-Jan-2022 14:47:21 INFO  - [Main] DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+Tue 25-Jan-2022 14:47:25 INFO  - [Main] RepositoryConfigurationDelegate     : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Tue 25-Jan-2022 14:47:26 INFO  - [Main] RepositoryConfigurationDelegate     : Finished Spring Data repository scanning in 161 ms. Found 1 JPA repository interfaces.
+Tue 25-Jan-2022 14:47:26 INFO  - [Main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1dbbfff5' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tue 25-Jan-2022 14:47:27 INFO  - [Main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tue 25-Jan-2022 14:47:28 INFO  - [Main] TomcatWebServer                     : Tomcat initialized with port(s): 6544 (http)
+Tue 25-Jan-2022 14:47:28 INFO  - [Main] Http11NioProtocol                   : Initializing ProtocolHandler ["http-nio-6544"]
+Tue 25-Jan-2022 14:47:28 INFO  - [Main] StandardService                     : Starting service [Tomcat]
+Tue 25-Jan-2022 14:47:28 INFO  - [Main] StandardEngine                      : Starting Servlet engine: [Apache Tomcat/9.0.41]
+Tue 25-Jan-2022 14:47:28 INFO  - [Main] [/]                                 : Initializing Spring embedded WebApplicationContext
+Tue 25-Jan-2022 14:47:28 INFO  - [Main] ServletWebServerApplicationContext  : Root WebApplicationContext: initialization completed in 7207 ms
+Tue 25-Jan-2022 14:47:30 INFO  - [Main] LogHelper                           : HHH000204: Processing PersistenceUnitInfo [name: default]
+Tue 25-Jan-2022 14:47:30 INFO  - [Main] Version                             : HHH000412: Hibernate ORM core version 5.4.25.Final
+Tue 25-Jan-2022 14:47:30 INFO  - [Main] Version                             : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+Tue 25-Jan-2022 14:47:31 INFO  - [Main] HikariDataSource                    : HikariPool-1 - Starting...
+Tue 25-Jan-2022 14:47:31 WARN  - [Main] DriverDataSource                    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+Tue 25-Jan-2022 14:47:31 INFO  - [Main] HikariDataSource                    : HikariPool-1 - Start completed.
+Tue 25-Jan-2022 14:47:32 INFO  - [Main] Dialect                             : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Tue 25-Jan-2022 14:47:36 INFO  - [Main] JtaPlatformInitiator                : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Tue 25-Jan-2022 14:47:36 INFO  - [Main] LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Tue 25-Jan-2022 14:47:36 WARN  - [Main] OptionalLiveReloadServer            : Unable to start LiveReload server
+Tue 25-Jan-2022 14:47:36 WARN  - [Main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Tue 25-Jan-2022 14:47:39 INFO  - [Main] JwtAccessTokenConverter             : Configured with RSA signing key
+Tue 25-Jan-2022 14:47:40 INFO  - [Main] JwtAccessTokenConverter             : Signing and verification RSA keys match
+Tue 25-Jan-2022 14:47:41 INFO  - [Main] EndpointLinksResolver               : Exposing 2 endpoint(s) beneath base path '/actuator'
+Tue 25-Jan-2022 14:47:42 INFO  - [Main] DefaultSecurityFilterChain          : Will secure Or [Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45b23c9b, org.springframework.security.web.context.SecurityContextPersistenceFilter@212b1005, org.springframework.security.web.header.HeaderWriterFilter@220c00bc, org.springframework.security.web.authentication.logout.LogoutFilter@68bc417c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6aa43b1e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d5914d9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@607c92f8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a33f5ba, org.springframework.security.web.session.SessionManagementFilter@3c2fb3a5, org.springframework.security.web.access.ExceptionTranslationFilter@2b59fa18, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3815a052]
+Tue 25-Jan-2022 14:47:42 INFO  - [Main] DefaultSecurityFilterChain          : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d6ddbdf, org.springframework.security.web.context.SecurityContextPersistenceFilter@7d3987c4, org.springframework.security.web.header.HeaderWriterFilter@35eba726, org.springframework.security.web.csrf.CsrfFilter@6bbf0e6b, org.springframework.security.web.authentication.logout.LogoutFilter@740daba2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@65c36da2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d7924ab, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@88cb50c, org.springframework.security.web.session.SessionManagementFilter@ae85c4e, org.springframework.security.web.access.ExceptionTranslationFilter@59582756, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7e689373]
+Tue 25-Jan-2022 14:47:42 INFO  - [Main] PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+Tue 25-Jan-2022 14:47:42 INFO  - [Main] ThreadPoolTaskExecutor              : Initializing ExecutorService 'applicationTaskExecutor'
+Tue 25-Jan-2022 14:47:43 WARN  - [Main] ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+Tue 25-Jan-2022 14:47:43 INFO  - [Main] Http11NioProtocol                   : Starting ProtocolHandler ["http-nio-6544"]
+Tue 25-Jan-2022 14:47:43 INFO  - [Main] TomcatWebServer                     : Tomcat started on port(s): 6544 (http) with context path ''
+Tue 25-Jan-2022 14:47:43 INFO  - [Main] DocumentationPluginsBootstrapper    : Context refreshed
+Tue 25-Jan-2022 14:47:44 INFO  - [Main] DocumentationPluginsBootstrapper    : Found 1 custom documentation plugin(s)
+Tue 25-Jan-2022 14:47:44 INFO  - [Main] ApiListingReferenceScanner          : Scanning for api listing references
+Tue 25-Jan-2022 14:47:44 INFO  - [Main] AuthServerApplication               : Started AuthServerApplication in 24.071 seconds (JVM running for 31.495)
+Tue 25-Jan-2022 14:48:12 INFO  - [ec-1] [/]                                 : Initializing Spring DispatcherServlet 'dispatcherServlet'
+Tue 25-Jan-2022 14:48:12 INFO  - [ec-1] DispatcherServlet                   : Initializing Servlet 'dispatcherServlet'
+Tue 25-Jan-2022 14:48:12 INFO  - [ec-1] DispatcherServlet                   : Completed initialization in 3 ms
+Tue 25-Jan-2022 14:50:58 INFO  - [.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+Tue 25-Jan-2022 14:50:58 INFO  - [.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+Tue 25-Jan-2022 14:50:58 INFO  - [.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+Tue 25-Jan-2022 14:50:58 INFO  - [.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+Tue 25-Jan-2022 14:50:58 INFO  - [.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+Tue 25-Jan-2022 14:50:58 INFO  - [.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+Tue 25-Jan-2022 14:50:58 INFO  - [.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+Tue 25-Jan-2022 14:50:59 INFO  - [.0.1] ThreadPoolTaskExecutor              : Shutting down ExecutorService 'applicationTaskExecutor'
+Tue 25-Jan-2022 14:50:59 INFO  - [.0.1] LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Tue 25-Jan-2022 14:50:59 INFO  - [.0.1] HikariDataSource                    : HikariPool-1 - Shutdown initiated...
+Tue 25-Jan-2022 14:50:59 INFO  - [.0.1] HikariDataSource                    : HikariPool-1 - Shutdown completed.
+Tue 25-Jan-2022 14:53:17 INFO  - [init] Version                             : HV000001: Hibernate Validator 6.1.6.Final
+Tue 25-Jan-2022 14:53:18 INFO  - [Main] AuthServerApplication               : Starting AuthServerApplication using Java 1.8.0_131 on DESKTOP-2N2OQGT with PID 5472 (C:\Users\Uche Kamani\Documents\STS4Projects\auth-server\target\classes started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\auth-server)
+Tue 25-Jan-2022 14:53:18 INFO  - [Main] AuthServerApplication               : The following profiles are active: dev
+Tue 25-Jan-2022 14:53:18 INFO  - [Main] DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+Tue 25-Jan-2022 14:53:18 INFO  - [Main] DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+Tue 25-Jan-2022 14:53:21 INFO  - [Main] RepositoryConfigurationDelegate     : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Tue 25-Jan-2022 14:53:21 INFO  - [Main] RepositoryConfigurationDelegate     : Finished Spring Data repository scanning in 112 ms. Found 1 JPA repository interfaces.
+Tue 25-Jan-2022 14:53:23 INFO  - [Main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6c4bf520' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tue 25-Jan-2022 14:53:23 INFO  - [Main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tue 25-Jan-2022 14:53:26 INFO  - [Main] TomcatWebServer                     : Tomcat initialized with port(s): 6544 (http)
+Tue 25-Jan-2022 14:53:26 INFO  - [Main] Http11NioProtocol                   : Initializing ProtocolHandler ["http-nio-6544"]
+Tue 25-Jan-2022 14:53:26 INFO  - [Main] StandardService                     : Starting service [Tomcat]
+Tue 25-Jan-2022 14:53:26 INFO  - [Main] StandardEngine                      : Starting Servlet engine: [Apache Tomcat/9.0.41]
+Tue 25-Jan-2022 14:53:27 INFO  - [Main] [/]                                 : Initializing Spring embedded WebApplicationContext
+Tue 25-Jan-2022 14:53:27 INFO  - [Main] ServletWebServerApplicationContext  : Root WebApplicationContext: initialization completed in 8851 ms
+Tue 25-Jan-2022 14:53:28 INFO  - [Main] LogHelper                           : HHH000204: Processing PersistenceUnitInfo [name: default]
+Tue 25-Jan-2022 14:53:28 INFO  - [Main] Version                             : HHH000412: Hibernate ORM core version 5.4.25.Final
+Tue 25-Jan-2022 14:53:28 INFO  - [Main] Version                             : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+Tue 25-Jan-2022 14:53:29 INFO  - [Main] HikariDataSource                    : HikariPool-1 - Starting...
+Tue 25-Jan-2022 14:53:29 WARN  - [Main] DriverDataSource                    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+Tue 25-Jan-2022 14:53:29 INFO  - [Main] HikariDataSource                    : HikariPool-1 - Start completed.
+Tue 25-Jan-2022 14:53:29 INFO  - [Main] Dialect                             : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Tue 25-Jan-2022 14:53:32 INFO  - [Main] JtaPlatformInitiator                : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Tue 25-Jan-2022 14:53:32 INFO  - [Main] LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Tue 25-Jan-2022 14:53:33 INFO  - [Main] OptionalLiveReloadServer            : LiveReload server is running on port 35729
+Tue 25-Jan-2022 14:53:33 WARN  - [Main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Tue 25-Jan-2022 14:53:35 INFO  - [Main] JwtAccessTokenConverter             : Configured with RSA signing key
+Tue 25-Jan-2022 14:53:35 INFO  - [Main] JwtAccessTokenConverter             : Signing and verification RSA keys match
+Tue 25-Jan-2022 14:53:35 INFO  - [Main] EndpointLinksResolver               : Exposing 2 endpoint(s) beneath base path '/actuator'
+Tue 25-Jan-2022 14:53:36 INFO  - [Main] DefaultSecurityFilterChain          : Will secure Or [Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6cd5640b, org.springframework.security.web.context.SecurityContextPersistenceFilter@3bfca758, org.springframework.security.web.header.HeaderWriterFilter@1097e2f0, org.springframework.security.web.authentication.logout.LogoutFilter@75065b1a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4334464, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@773dd0f9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2475ee81, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@afe72c6, org.springframework.security.web.session.SessionManagementFilter@3027ad24, org.springframework.security.web.access.ExceptionTranslationFilter@14dd0a57, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2e9fed65]
+Tue 25-Jan-2022 14:53:36 INFO  - [Main] DefaultSecurityFilterChain          : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@977375e, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d5c5870, org.springframework.security.web.header.HeaderWriterFilter@268078d8, org.springframework.security.web.csrf.CsrfFilter@2058ce59, org.springframework.security.web.authentication.logout.LogoutFilter@38b00fd4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3dd526cc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1836df16, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@347d3fdf, org.springframework.security.web.session.SessionManagementFilter@3a14b5b3, org.springframework.security.web.access.ExceptionTranslationFilter@ecdc48b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@51da18a3]
+Tue 25-Jan-2022 14:53:36 INFO  - [Main] PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+Tue 25-Jan-2022 14:53:37 INFO  - [Main] ThreadPoolTaskExecutor              : Initializing ExecutorService 'applicationTaskExecutor'
+Tue 25-Jan-2022 14:53:37 WARN  - [Main] ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+Tue 25-Jan-2022 14:53:37 INFO  - [Main] Http11NioProtocol                   : Starting ProtocolHandler ["http-nio-6544"]
+Tue 25-Jan-2022 14:53:38 INFO  - [Main] TomcatWebServer                     : Tomcat started on port(s): 6544 (http) with context path ''
+Tue 25-Jan-2022 14:53:38 INFO  - [Main] DocumentationPluginsBootstrapper    : Context refreshed
+Tue 25-Jan-2022 14:53:38 INFO  - [Main] DocumentationPluginsBootstrapper    : Found 1 custom documentation plugin(s)
+Tue 25-Jan-2022 14:53:38 INFO  - [Main] ApiListingReferenceScanner          : Scanning for api listing references
+Tue 25-Jan-2022 14:53:38 INFO  - [Main] AuthServerApplication               : Started AuthServerApplication in 21.407 seconds (JVM running for 27.575)
+Tue 25-Jan-2022 14:57:12 INFO  - [ec-1] [/]                                 : Initializing Spring DispatcherServlet 'dispatcherServlet'
+Tue 25-Jan-2022 14:57:12 INFO  - [ec-1] DispatcherServlet                   : Initializing Servlet 'dispatcherServlet'
+Tue 25-Jan-2022 14:57:13 INFO  - [ec-1] DispatcherServlet                   : Completed initialization in 942 ms
+Tue 25-Jan-2022 15:35:21 INFO  - [ec-2] AuthFilter                          : ----->>>>> HTTP METHOD: POST
+Tue 25-Jan-2022 15:35:21 INFO  - [ec-2] AuthFilter                          : ----->>>>> REQUEST URI: /oauth/token
+Tue 25-Jan-2022 15:35:21 INFO  - [ec-2] AuthFilter                          : ----->>>>> SOURCE IP: 0:0:0:0:0:0:0:1
+Tue 25-Jan-2022 15:37:02 INFO  - [init] Version                             : HV000001: Hibernate Validator 6.1.6.Final
+Tue 25-Jan-2022 15:37:02 INFO  - [Main] AuthServerApplication               : Starting AuthServerApplication using Java 1.8.0_131 on DESKTOP-2N2OQGT with PID 15116 (C:\Users\Uche Kamani\Documents\STS4Projects\auth-server\target\classes started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\auth-server)
+Tue 25-Jan-2022 15:37:02 INFO  - [Main] AuthServerApplication               : The following profiles are active: dev
+Tue 25-Jan-2022 15:37:02 INFO  - [Main] DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+Tue 25-Jan-2022 15:37:02 INFO  - [Main] DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+Tue 25-Jan-2022 15:37:07 INFO  - [Main] RepositoryConfigurationDelegate     : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Tue 25-Jan-2022 15:37:08 INFO  - [Main] RepositoryConfigurationDelegate     : Finished Spring Data repository scanning in 577 ms. Found 1 JPA repository interfaces.
+Tue 25-Jan-2022 15:37:12 INFO  - [Main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3d3a6c11' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tue 25-Jan-2022 15:37:12 INFO  - [Main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tue 25-Jan-2022 15:37:14 INFO  - [Main] TomcatWebServer                     : Tomcat initialized with port(s): 6544 (http)
+Tue 25-Jan-2022 15:37:14 INFO  - [Main] Http11NioProtocol                   : Initializing ProtocolHandler ["http-nio-6544"]
+Tue 25-Jan-2022 15:37:14 INFO  - [Main] StandardService                     : Starting service [Tomcat]
+Tue 25-Jan-2022 15:37:14 INFO  - [Main] StandardEngine                      : Starting Servlet engine: [Apache Tomcat/9.0.41]
+Tue 25-Jan-2022 15:37:14 INFO  - [Main] [/]                                 : Initializing Spring embedded WebApplicationContext
+Tue 25-Jan-2022 15:37:14 INFO  - [Main] ServletWebServerApplicationContext  : Root WebApplicationContext: initialization completed in 12442 ms
+Tue 25-Jan-2022 15:37:15 INFO  - [Main] LogHelper                           : HHH000204: Processing PersistenceUnitInfo [name: default]
+Tue 25-Jan-2022 15:37:16 INFO  - [Main] Version                             : HHH000412: Hibernate ORM core version 5.4.25.Final
+Tue 25-Jan-2022 15:37:16 INFO  - [Main] Version                             : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+Tue 25-Jan-2022 15:37:16 INFO  - [Main] HikariDataSource                    : HikariPool-1 - Starting...
+Tue 25-Jan-2022 15:37:16 WARN  - [Main] DriverDataSource                    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+Tue 25-Jan-2022 15:37:17 INFO  - [Main] HikariDataSource                    : HikariPool-1 - Start completed.
+Tue 25-Jan-2022 15:37:17 INFO  - [Main] Dialect                             : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Tue 25-Jan-2022 15:37:20 INFO  - [Main] JtaPlatformInitiator                : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Tue 25-Jan-2022 15:37:20 INFO  - [Main] LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Tue 25-Jan-2022 15:37:20 INFO  - [Main] OptionalLiveReloadServer            : LiveReload server is running on port 35729
+Tue 25-Jan-2022 15:37:20 WARN  - [Main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Tue 25-Jan-2022 15:37:21 INFO  - [Main] JwtAccessTokenConverter             : Configured with RSA signing key
+Tue 25-Jan-2022 15:37:21 INFO  - [Main] JwtAccessTokenConverter             : Signing and verification RSA keys match
+Tue 25-Jan-2022 15:37:22 INFO  - [Main] EndpointLinksResolver               : Exposing 2 endpoint(s) beneath base path '/actuator'
+Tue 25-Jan-2022 15:37:23 INFO  - [Main] DefaultSecurityFilterChain          : Will secure Or [Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@54d78080, org.springframework.security.web.context.SecurityContextPersistenceFilter@59172d64, org.springframework.security.web.header.HeaderWriterFilter@5a192657, org.springframework.security.web.authentication.logout.LogoutFilter@215939d0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7f41e4d0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@279c5bef, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a8be9f6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6cd03853, org.springframework.security.web.session.SessionManagementFilter@f455824, org.springframework.security.web.access.ExceptionTranslationFilter@d71cdb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@543876]
+Tue 25-Jan-2022 15:37:23 INFO  - [Main] DefaultSecurityFilterChain          : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6e906acc, org.springframework.security.web.context.SecurityContextPersistenceFilter@e8a2104, org.springframework.security.web.header.HeaderWriterFilter@14fcbc0, org.springframework.security.web.csrf.CsrfFilter@72a97c49, org.springframework.security.web.authentication.logout.LogoutFilter@3c2d0ffb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@201794f7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ff95afe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@162e4ee7, org.springframework.security.web.session.SessionManagementFilter@a56cc65, org.springframework.security.web.access.ExceptionTranslationFilter@5b4eafa5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@cc869cb]
+Tue 25-Jan-2022 15:37:23 INFO  - [Main] PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+Tue 25-Jan-2022 15:37:23 INFO  - [Main] ThreadPoolTaskExecutor              : Initializing ExecutorService 'applicationTaskExecutor'
+Tue 25-Jan-2022 15:37:24 WARN  - [Main] ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+Tue 25-Jan-2022 15:37:24 INFO  - [Main] Http11NioProtocol                   : Starting ProtocolHandler ["http-nio-6544"]
+Tue 25-Jan-2022 15:37:24 INFO  - [Main] TomcatWebServer                     : Tomcat started on port(s): 6544 (http) with context path ''
+Tue 25-Jan-2022 15:37:24 INFO  - [Main] DocumentationPluginsBootstrapper    : Context refreshed
+Tue 25-Jan-2022 15:37:24 INFO  - [Main] DocumentationPluginsBootstrapper    : Found 1 custom documentation plugin(s)
+Tue 25-Jan-2022 15:37:24 INFO  - [Main] ApiListingReferenceScanner          : Scanning for api listing references
+Tue 25-Jan-2022 15:37:24 INFO  - [Main] AuthServerApplication               : Started AuthServerApplication in 23.256 seconds (JVM running for 26.165)
+Tue 25-Jan-2022 15:37:35 INFO  - [ec-2] [/]                                 : Initializing Spring DispatcherServlet 'dispatcherServlet'
+Tue 25-Jan-2022 15:37:35 INFO  - [ec-2] DispatcherServlet                   : Initializing Servlet 'dispatcherServlet'
+Tue 25-Jan-2022 15:37:35 INFO  - [ec-2] DispatcherServlet                   : Completed initialization in 3 ms
+Tue 25-Jan-2022 15:37:36 INFO  - [ec-2] AuthFilter                          : ----->>>>> HTTP METHOD: POST
+Tue 25-Jan-2022 15:37:36 INFO  - [ec-2] AuthFilter                          : ----->>>>> REQUEST URI: /oauth/token
+Tue 25-Jan-2022 15:37:36 INFO  - [ec-2] AuthFilter                          : ----->>>>> SOURCE IP: 0:0:0:0:0:0:0:1
+Tue 25-Jan-2022 15:37:57 INFO  - [ec-3] AuthFilter                          : ----->>>>> HTTP METHOD: POST
+Tue 25-Jan-2022 15:37:57 INFO  - [ec-3] AuthFilter                          : ----->>>>> REQUEST URI: /oauth/token
+Tue 25-Jan-2022 15:37:57 INFO  - [ec-3] AuthFilter                          : ----->>>>> SOURCE IP: 0:0:0:0:0:0:0:1
+Tue 25-Jan-2022 15:50:50 INFO  - [ec-9] AuthFilter                          : ----->>>>> HTTP METHOD: POST
+Tue 25-Jan-2022 15:50:50 INFO  - [ec-9] AuthFilter                          : ----->>>>> REQUEST URI: /oauth/token
+Tue 25-Jan-2022 15:50:50 INFO  - [ec-9] AuthFilter                          : ----->>>>> SOURCE IP: 127.0.0.1
+Tue 25-Jan-2022 15:53:37 INFO  - [ec-1] AuthFilter                          : ----->>>>> HTTP METHOD: POST
+Tue 25-Jan-2022 15:53:37 INFO  - [ec-1] AuthFilter                          : ----->>>>> REQUEST URI: /oauth/token
+Tue 25-Jan-2022 15:53:37 INFO  - [ec-1] AuthFilter                          : ----->>>>> SOURCE IP: 127.0.0.1
+Tue 25-Jan-2022 16:05:24 INFO  - [ec-3] AuthFilter                          : ----->>>>> HTTP METHOD: POST
+Tue 25-Jan-2022 16:05:24 INFO  - [ec-3] AuthFilter                          : ----->>>>> REQUEST URI: /oauth/token
+Tue 25-Jan-2022 16:05:24 INFO  - [ec-3] AuthFilter                          : ----->>>>> SOURCE IP: 127.0.0.1
+Tue 25-Jan-2022 16:12:04 INFO  - [ec-5] AuthFilter                          : ----->>>>> HTTP METHOD: POST
+Tue 25-Jan-2022 16:12:04 INFO  - [ec-5] AuthFilter                          : ----->>>>> REQUEST URI: /oauth/token
+Tue 25-Jan-2022 16:12:04 INFO  - [ec-5] AuthFilter                          : ----->>>>> SOURCE IP: 127.0.0.1
+Tue 25-Jan-2022 16:17:48 INFO  - [ec-7] AuthFilter                          : ----->>>>> HTTP METHOD: POST
+Tue 25-Jan-2022 16:17:48 INFO  - [ec-7] AuthFilter                          : ----->>>>> REQUEST URI: /oauth/token
+Tue 25-Jan-2022 16:17:48 INFO  - [ec-7] AuthFilter                          : ----->>>>> SOURCE IP: 127.0.0.1
+Tue 25-Jan-2022 16:56:43 WARN  - [eper] HikariPool                          : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=36m44s141ms340µs500ns).
+Tue 25-Jan-2022 16:57:14 WARN  - [eper] HikariPool                          : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s241ms63µs900ns).
+Tue 25-Jan-2022 17:04:29 INFO  - [.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+Tue 25-Jan-2022 17:04:29 INFO  - [.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+Tue 25-Jan-2022 17:04:29 INFO  - [.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+Tue 25-Jan-2022 17:04:29 INFO  - [.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+Tue 25-Jan-2022 17:04:29 INFO  - [.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+Tue 25-Jan-2022 17:04:29 INFO  - [.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+Tue 25-Jan-2022 17:04:29 INFO  - [.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+Tue 25-Jan-2022 17:04:35 INFO  - [.0.1] ThreadPoolTaskExecutor              : Shutting down ExecutorService 'applicationTaskExecutor'
+Tue 25-Jan-2022 17:04:35 INFO  - [.0.1] LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Tue 25-Jan-2022 17:04:36 INFO  - [.0.1] HikariDataSource                    : HikariPool-1 - Shutdown initiated...
+Tue 25-Jan-2022 17:04:36 INFO  - [.0.1] HikariDataSource                    : HikariPool-1 - Shutdown completed.

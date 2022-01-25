@@ -38,7 +38,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 		http.authorizeRequests()
 			.antMatchers("/", "/index", "/v2/api-docs/**", "/swagger-resources/**", "/swagger-ui.html",
-				"/webjars/**", "/resources/**", "/auth-serve/messenger/v1/**").permitAll()
+				"/webjars/**", "/resources/**", "/auth-serve/reloadly/v1/**").permitAll()
 			.anyRequest().authenticated()
 			.and().sessionManagement()
 			.sessionCreationPolicy(SessionCreationPolicy.NEVER);
